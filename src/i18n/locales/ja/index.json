@@ -3,14 +3,14 @@
     "app_name": "Pocket Sync",
     "new_firmware": "新しい Pocket ファームウェア v{version} が利用可能です",
     "update_available": "アップデートが利用可能です! {version}",
-    "sponsor_link": "GitHubで {count, number} 人と一緒にスポンサーになろう",
-    "whats_new": "新着情報？",
-    "close_changelog": "近い"
+    "sponsor_link": "GitHub で {count, number} 人と一緒にスポンサーになろう",
+    "whats_new": "新着情報",
+    "close_changelog": "閉じる"
   },
   "app": {
     "app_name": "Pocket Sync",
     "connect_button": "Pocket / SD Card に接続",
-    "not_pocket_tip": "このフォルダに Pocket システムファイルが存在しないようです、SD Card を少なくとも一度 Pocket に挿入する必要があります"
+    "not_pocket_tip": "このフォルダに Pocket のシステムファイルが存在しないようです、SD Card を少なくとも一度 Pocket に入れる必要があります"
   },
   "clean_files": {
     "close_button": "閉じる",
@@ -19,13 +19,14 @@
     "title": "クリーンアップ"
   },
   "mrom": {
-    "close_button": "近い",
-    "move_dumps": "ROMを移動する",
+    "close_button": "閉じる",
+    "move_dumps": "ROM を移動する",
     "headers": {
       "platform": "プラットフォーム",
       "library_image": "ライブラリ画像",
       "name": "名前",
-      "destination": "行き先"
+      "destination": "保存先",
+      "dumped_save": "セーブ抽出済み"
     }
   },
   "update_all": {
@@ -51,7 +52,8 @@
       "install": "インストール",
       "required_files": "必要なファイル",
       "uninstall": "アンインストール",
-      "update": "アップデート"
+      "update": "アップデート",
+      "hide_core": "コア非表示"
     },
     "inputs": "Inputs",
     "modal": {
@@ -80,6 +82,7 @@
     },
     "required_files": "必要なファイル",
     "required_files_count": "{count} / {total} ファイル",
+    "hide_core_confirm": "コアをリストから非表示にできます、非表示のコアは設定から管理できます",
     "settings": "Settings",
     "sponsor": "スポンサー",
     "download_count": "Downloads",
@@ -96,9 +99,9 @@
     "url": "URL",
     "version": "バージョン",
     "display_modes_title": "Display Modes",
-    "display_mode_warning": "この Display Mode を適用するにはコアのアップデートが必要です、それでも有効にしますか？",
+    "display_mode_warning": "この Display Mode を適用するにはコアのアップデートが必要です、続行しますか？",
     "previous_version": "以前のバージョン",
-    "display_modes_limit": "コアは最大 16 個の表示モードのみをサポートします。{count} 個が選択されています"
+    "display_modes_limit": "コアがサポートできる表示モードは最大 16 個までです。{count} 個が選択されています"
   },
   "core_info_required_files": {
     "close": "閉じる",
@@ -109,11 +112,11 @@
     "file_status": {
       "needs_update_from_archive": "アップデート可能",
       "missing_but_on_archive": "ダウンロード可能",
-      "not_found": "archive にありません",
+      "not_found": "Archive にありません",
       "exists": "ダウンロード済み",
       "not_checked": "不明",
-      "found_at_root": "ファイル確認。ルートに配置されています",
-      "root_needs_update": "ファイル不一致。ルートを確認してください"
+      "found_at_root": "ファイルが有効です。ルートに配置されています",
+      "root_needs_update": "ファイルが無効です。ルートを確認してください"
     }
   },
   "cores": {
@@ -130,17 +133,17 @@
         "last_update": "最新アップデート"
       }
     },
-    "install_tip": "コア（またはその他の ZIP ファイル）をこのウィンドウにドラッグしてインストールすることもできます",
+    "install_tip": "コア（またはその他の ZIP ファイル）をここにドラッグしてインストールすることもできます",
     "installed": "インストール済み ({count})",
     "not_installed": "利用可能 ({count})"
   },
   "error": {
-    "report": "GitHubでエラーを報告できます。報告する際は以下のテキストと直前のアクションを含めてください",
+    "report": "GitHub からエラーを報告できます。報告する際は以下のテキストと直前のアクションを含めてください",
     "retry": "再試行",
     "title": "エラー",
     "repair": {
-      "title": "修理",
-      "in_progress": "修理...",
+      "title": "修復",
+      "in_progress": "修復中...",
       "fixes": {
         "redownload_file": "再ダウンロード <pre>{path}</pre> から <bold>{coreName}</bold>"
       }
@@ -153,7 +156,7 @@
     },
     "fetch_button": "同期",
     "file_count": "{count} / {total, plural, one {# ファイル} other {# ファイル}}",
-    "loading": "読み込み中...",
+    "loading": "loading...",
     "new": {
       "add_extension": "追加",
       "add_fetch": "同期項目を追加",
@@ -161,14 +164,14 @@
       "archive_tip": "この設定はファイルがzip形式のアーカイブでは機能しません。メタデータファイルのダウンロードを避けるため、拡張子を確認してください。",
       "close": "閉じる",
       "destination": "保存先",
-      "extensions": "拡張子を限定:",
+      "extensions": "拡張子を制限:",
       "origin": "ソースフォルダ",
       "title": "新規同期項目",
-      "validating_archive_name": "archive {name} を確認中...",
-      "invalid_archive_name": "https://archive.org/details/{name} に archive を見つかりませんでした"
+      "validating_archive_name": "Archive {name} を確認中...",
+      "invalid_archive_name": "https://archive.org/details/{name} に Archive を見つかりませんでした"
     },
-    "remove_button": "削除",
-    "remove_confirm": "この操作は同期設定を削除しますが、ファイルは削除されません。実行しますか？",
+    "remove_button": "消去",
+    "remove_confirm": "この操作は同期設定を消去しますが、ファイルは削除されません。実行しますか？",
     "types": {
       "archive_org": "archive.org ファイル",
       "filesystem": "ローカルファイル"
@@ -190,7 +193,7 @@
       "from": "提供元 ",
       "title": "v{version} - { published, date, short } リリースノート:"
     },
-    "remove_button": "削除"
+    "remove_button": "消去"
   },
   "games": {
     "controls": {
@@ -207,17 +210,17 @@
   "image_editor": {
     "cancel": "キャンセル",
     "import_image": "画像をインポート",
-    "remove": "削除",
+    "remove": "消去",
     "reset": "リセット",
     "rotate": "回転",
     "save": "保存",
     "scale": "スケール"
   },
   "instance_json": {
-    "available_for": "以下のコアは自動的にinstance.jsonファイルを作成できます:",
+    "available_for": "以下のコアは自動的に instance.json ファイルを作成できます:",
     "close_button": "閉じる",
     "skipped_file": "{file_name} をスキップしました",
-    "title": "Instance JSON作成",
+    "title": "Instance JSON 作成",
     "wrote_file": "{file_name} を書き込みました"
   },
   "layout": {
@@ -301,8 +304,8 @@
   "platform_info": {
     "controls": {
       "back": "リストに戻る",
-      "data_packs": "データパック",
-      "image_packs": "イメージパック"
+      "data_packs": "Data Packs",
+      "image_packs": "Image Packs"
     },
     "cores": "コア",
     "edit": "編集"
@@ -310,9 +313,9 @@
   "platforms": {
     "cancel": "キャンセル",
     "controls": {
-      "data_packs": "データパック",
+      "data_packs": "Data Packs",
       "remove_coreless": "コアがない項目を削除",
-      "image_packs": "イメージパック",
+      "image_packs": "Image Packs",
       "search": "検索"
     },
     "data_packs": {
@@ -391,7 +394,7 @@
       "back": "リストに戻る",
       "save": "保存",
       "share": "共有",
-      "upscaled": "超解像"
+      "upscaled": "アップスケール"
     }
   },
   "screenshots": {
@@ -427,11 +430,11 @@
         "silver": "Silver",
         "aluminium_natural": "Natural",
         "aluminium_indigo": "Indigo",
-        "gbc_dandelion": "タンポポ",
-        "gbc_teal": "ティール",
-        "gbc_grape": "グレープ",
-        "gbc_berry": "ベリー",
-        "gbc_gold": "金"
+        "gbc_dandelion": "Dandelion",
+        "gbc_teal": "Teal",
+        "gbc_grape": "Grape",
+        "gbc_berry": "Berry",
+        "gbc_gold": "Gold"
       },
       "classic_label": "Classic",
       "transparent_label": "Transparent",
@@ -452,22 +455,22 @@
     "archive": {
       "save": "保存",
       "title": "ROM & BIOS アーカイブ (必要なファイル)",
-      "warning": "著作権で保護されている可能性のある（アーケード）ROM & BIOSファイルのダウンロードについて、お住いの地域の法律を確認してください。\nこれに同意する場合のみ、以下のURLを入力欄にコピーして「保存」をクリックしてください。"
+      "warning": "著作権で保護されている可能性のある（アーケード）ROM & BIOS ファイルのダウンロードについて、お住いの地域の法律を確認してください。\nこれに同意する場合のみ、以下の URL を入力欄にコピーして「保存」をクリックしてください。"
     },
     "github_token": {
-      "title": "Githubトークン",
+      "title": "Github トークン",
       "remove": "取り除く",
-      "ramble": "GitHub のレート制限に問題がある場合は、以下に PAT トークンを追加してください。\nPAT トークンにはスコープが設定されておらず、Pocket の SD カードではなくコンピューターに保存されます。"
+      "ramble": "GitHub のレート制限に問題がある場合は、以下に PAT トークンを追加してください。\nPAT トークンにはスコープを設定せず、Pocket の SD Card ではなくコンピューターに保存する必要があります。"
     },
     "patreon_keys": {
-      "title": "Patreonキー",
+      "title": "Patreon キー",
       "update": "キーを取得",
-      "ramble": "アクティブなPatreonメンバーシップを介してロック解除キーを必要とするコアの場合",
-      "placeholder": "Patreonのメール"
+      "ramble": "アクティブな Patreon メンバーシップを介してロック解除キーを必要とするコアの場合",
+      "placeholder": "Patreon メール"
     },
     "clear_file_cache": {
       "button": "キャッシュをクリア",
-      "ramble": "USB & SD Card の転送品質も保つため、大きなファイルはPCのファイルシステムに一時的にコピー＆保存されます。\n問題が発生した場合はキャッシュをクリアしてみてください。",
+      "ramble": "USB & SD Card の転送品質も保つため、大きなファイルは PC のファイルシステムに一時的にコピー＆保存されます。\n問題が発生した場合はキャッシュをクリアしてみてください。",
       "title": "キャッシュをクリア"
     },
     "disconnect": {
@@ -476,13 +479,13 @@
       "title": "切断"
     },
     "reconnect": {
-      "checkbox": "開いたときに再接続",
+      "checkbox": "起動時に再接続",
       "ramble": "アプリを開くときに、「Pocketに接続」画面をスキップして最後に開いたフォルダ <1> { ppath } </1> への再接続を試みます。",
-      "title": "開いたときに再接続"
+      "title": "起動時に再接続"
     },
     "keep_platform_data": {
       "checkbox": "既存のプラットフォームファイルを保持",
-      "ramble": "これの設定により、「すべてをアップデート」と各コアのアップデートで、既存のプラットフォームファイルを更新しないように変更されます。設定をカスタマイズしている場合はオンにしてください。",
+      "ramble": "これの設定により、「すべてをアップデート」と各コアのアップデートで、既存のプラットフォームファイルを更新しないように変更されます。コア設定をカスタマイズしている場合はオンにしてください。",
       "title": "アップデート時にプラットフォームファイルを置き換えない"
     },
     "turbo_downloads": {
@@ -495,13 +498,13 @@
       "button": "ログフォルダを開く"
     },
     "hidden_cores": {
-      "title": "隠されたコア",
-      "ramble": "これらのコアは、利用可能なアンインストール済みコアのリストからは非表示になりますが、インストールされている場合は非表示になりません。<inlang-LineFeed>情報ページからコアを非表示にすることができます。",
-      "button": "非表示のコアリストをクリア"
+      "title": "非表示コア",
+      "ramble": "これらのコアは、利用可能な未インストールコアのリストからは非表示になりますが、インストールされている場合は非表示になりません。<inlang-LineFeed>情報ページからコアを非表示にすることができます。",
+      "button": "非表示コアリストをクリア"
     },
     "gb_palettes_conversion": {
       "title": "GB パレット形式",
-      "ramble": ".pal ファイルを .gbp ファイルに複製します。背景に使用されている 4 色を新しい .gbp ファイルにコピーします。\n切り替えると、/Assets/gb/common/palettes 内の各 .pal ファイルに対して .gbp ファイルが作成されます。",
+      "ramble": ".pal ファイルを .gbp ファイルにコピーします。背景に使用されている 4 色を新しい .gbp ファイルにコピーします。\n切り替えを行いますと、/Assets/gb/common/palettes 内の各 .pal ファイルに対して .gbp ファイルが作成されます。",
       "checkbox": "自動 .gbp ファイルを有効にする"
     },
     "thanks": "Thanks to:"
@@ -510,7 +513,7 @@
     "less_than_1_min_ago": "1 分以内"
   },
   "uninstall_core": {
-    "confirm_text": "この操作によりコアは削除されますが、ゲーム、セーブ、ライブラリデータ、プラットフォーム情報は削除されません。よろしいですか？",
+    "confirm_text": "この操作によりコアは削除されますが、ゲーム、セーブ、ライブラリデータ、プラットフォーム情報は削除されません。続行しますか？",
     "confirm_title": "コアをアンインストール"
   },
   "zip_install": {
@@ -518,11 +521,11 @@
       "item": "{name} - {count, number, short} ファイル",
       "cores": "Zip 内の複数のコア",
       "platforms": "プラットフォームファイル",
-      "other": "他の"
+      "other": "その他"
     },
     "cancel_button": "キャンセル",
     "confirm_button": "確認",
-    "remove_duplicate": "重複するファイルを削除",
+    "remove_duplicate": "重複ファイルを削除",
     "scanning": "ファイルをスキャン中...",
     "moved_files_info": "ファイルが移動された場合（例：JSON ファイルが「_alternatives」に移動）の処理を行う",
     "replace": {

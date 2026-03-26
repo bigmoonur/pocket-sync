@@ -4,7 +4,7 @@
     "new_firmware": "发现新的Pocket固件 v{version}",
     "update_available": "软件有更新! {version}",
     "sponsor_link": "通过 GitHub 与 {count, number} 人一起赞助",
-    "whats_new": "什么是新的？",
+    "whats_new": "有什么新闻？",
     "close_changelog": "关闭"
   },
   "app": {
@@ -25,7 +25,8 @@
       "platform": "平台",
       "library_image": "图库图片",
       "name": "姓名",
-      "destination": "目的地"
+      "destination": "目标位置",
+      "dumped_save": "存档已导出"
     }
   },
   "update_all": {
@@ -51,7 +52,8 @@
       "install": "安装",
       "required_files": "必要文件",
       "uninstall": "卸载",
-      "update": "更新"
+      "update": "更新",
+      "hide_core": "隐藏核心"
     },
     "inputs": "按键提示",
     "modal": {
@@ -80,6 +82,7 @@
     },
     "required_files": "必要文件",
     "required_files_count": "{count} / {total} 文件",
+    "hide_core_confirm": "将从列表中隐藏核心，被隐藏的核心可以在设置中管理",
     "settings": "配置",
     "sponsor": "赞助作者",
     "download_count": "下载",
@@ -96,7 +99,7 @@
     "url": "网页地址",
     "version": "版本",
     "display_modes_title": "显示模式",
-    "display_mode_warning": "此显示模式需要更新核心，您确定要打开它吗？",
+    "display_mode_warning": "此显示模式需要更新核心，确定要打开吗？",
     "previous_version": "先前版本",
     "display_modes_limit": "核心仅支持最多 16 种显示模式，您已选择 {count} 种"
   },
@@ -261,7 +264,7 @@
         "background": "背景",
         "obj0": "Obj0",
         "obj1": "Obj1",
-        "window": "窗户",
+        "window": "窗口",
         "off": "LCD 关闭"
       },
       "save": "保存",
@@ -455,7 +458,7 @@
       "warning": "请您自行评估所处地区针对数字版权保护的法律法规风险。\n若您确认使用资料库，请复制下面的链接到文本框并点击 \"保存\"。"
     },
     "github_token": {
-      "title": "Github 代币",
+      "title": "Github 令牌",
       "remove": "消除",
       "ramble": "如果您遇到 GitHub 速率限制问题，请在下面添加 PAT 令牌。\nPAT 令牌不应设置任何范围，并且存储在您的计算机上而不是 Pocket 的 SD 卡上。"
     },
